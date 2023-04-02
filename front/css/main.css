@@ -29,10 +29,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 300;
-  margin-bottom: 0.25rem;
-  color: #777;
+  margin-bottom: 0.5rem;
+  color: #ccc;
 }
 
 h2 {
@@ -376,11 +376,11 @@ main .todo-list #todo-list .todo-item .todo-content input {
 }
 
 main .todo-list #todo-list .todo-item .todo-content input:not(:-moz-read-only) {
-  color: #2c6415;
+  color: #ec4899;
 }
 
 main .todo-list #todo-list .todo-item .todo-content input:not(:read-only) {
-  color: #2c6415;
+  color: #ec4899;
 }
 
 main .todo-list #todo-list .todo-item .actions {

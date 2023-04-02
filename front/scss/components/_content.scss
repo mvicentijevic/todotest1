@@ -97,7 +97,7 @@ main {
             display: block;
             transition: $transit2;
             &:not(:read-only) {
-              color: $personal;
+              color: $pink;
             }
           }
         }
