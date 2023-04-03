@@ -10,11 +10,11 @@ main {
       .todo-item { 
         display: flex;
         align-items: center;
-        background-color: $darker;
+        background-color: $darker1;
         padding: 0.75rem;
         border-radius: 1rem;
         margin-bottom: 0.75rem;
-        box-shadow: $shadow1;
+        box-shadow: $shadow2;
         label {
           display: block;
           margin-right: 1rem;
@@ -49,11 +49,11 @@ main {
                 transition: 0.2s ease-in-out;
               }
               &::before {
-                width: 0.625rem;
+                width: 0.75rem;
                 height: 0.25rem;
               }
               &::after {
-                width: 1.25rem;
+                width: 1.75rem;
                 height: 0.25rem;
               }
               &.business {
@@ -79,11 +79,11 @@ main {
               display: none;
             }
             &:checked ~ .bubble::before {
-              transform: translateX(-0.3125rem) translateY(0.2rem) rotateZ(45deg);
+              transform: translateX(-0.3125rem) translateY(0.3125rem) rotateZ(45deg);
               opacity: 1;
             }
             &:checked ~ .bubble::after {
-              transform: translateX(0.25rem) rotateZ(135deg);
+              transform: translateX(0.4375rem) rotateZ(135deg);
               opacity: 1;
             }
           }
@@ -107,8 +107,8 @@ main {
           button {
             cursor: pointer;
             margin: 0 0.5rem;
-            font-size: 1.125rem;
-            font-weight: 500;
+            font-size: 1.0625rem;
+            font-weight: 700;
             text-transform: uppercase;
             transition: $transit2;
             @media only screen and (max-width: 600px) {
@@ -129,6 +129,8 @@ main {
           }
         }
         &.done {
+          box-shadow: $shadow3;
+          background-color: $darker;
           .todo-content {
             input {
               text-decoration: line-through;

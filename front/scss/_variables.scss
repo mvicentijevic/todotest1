@@ -4,6 +4,7 @@ $taskish: #ccc;
 $gray: #777;
 $dark: #374151;
 $darker: #1f2937;
+$darker1: #1d2530;
 $darkest: #111827;
 
 $pink: #ec4899;
@@ -28,5 +29,7 @@ $fontFamily4: 'Poppins', sans-serif;
 $fontFamily5: 'Fira Sans', sans-serif;
 
 $shadow1: 0 1px 3px rgba(0, 0, 0, 0.1);
+$shadow2: 0 1px 2px $darker1;
+$shadow3: 0 1px 2px $darker;
 $businessGlow: 0px 0px 4px $business;
 $personalGlow: 0px 0px 4px $personal;

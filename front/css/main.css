@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.375rem;
   font-weight: 300;
   margin-bottom: 0.5rem;
   color: #ccc;
@@ -68,7 +68,7 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 }
 
 header {
-  padding: 1rem;
+  padding: 0.75rem;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
@@ -260,12 +260,12 @@ main .todo-list #todo-list .todo-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1f2937;
+  background-color: #1d2530;
   padding: 0.75rem;
   border-radius: 1rem;
   margin-bottom: 0.75rem;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 2px #1d2530;
+          box-shadow: 0 1px 2px #1d2530;
 }
 
 main .todo-list #todo-list .todo-item label {
@@ -319,12 +319,12 @@ main .todo-list #todo-list .todo-item label span.bubble::before, main .todo-list
 }
 
 main .todo-list #todo-list .todo-item label span.bubble::before {
-  width: 0.625rem;
+  width: 0.75rem;
   height: 0.25rem;
 }
 
 main .todo-list #todo-list .todo-item label span.bubble::after {
-  width: 1.25rem;
+  width: 1.75rem;
   height: 0.25rem;
 }
 
@@ -349,14 +349,14 @@ main .todo-list #todo-list .todo-item label input[type="radio"], main .todo-list
 }
 
 main .todo-list #todo-list .todo-item label input:checked ~ .bubble::before {
-  -webkit-transform: translateX(-0.3125rem) translateY(0.2rem) rotateZ(45deg);
-          transform: translateX(-0.3125rem) translateY(0.2rem) rotateZ(45deg);
+  -webkit-transform: translateX(-0.3125rem) translateY(0.3125rem) rotateZ(45deg);
+          transform: translateX(-0.3125rem) translateY(0.3125rem) rotateZ(45deg);
   opacity: 1;
 }
 
 main .todo-list #todo-list .todo-item label input:checked ~ .bubble::after {
-  -webkit-transform: translateX(0.25rem) rotateZ(135deg);
-          transform: translateX(0.25rem) rotateZ(135deg);
+  -webkit-transform: translateX(0.4375rem) rotateZ(135deg);
+          transform: translateX(0.4375rem) rotateZ(135deg);
   opacity: 1;
 }
 
@@ -393,8 +393,8 @@ main .todo-list #todo-list .todo-item .actions {
 main .todo-list #todo-list .todo-item .actions button {
   cursor: pointer;
   margin: 0 0.5rem;
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-size: 1.0625rem;
+  font-weight: 700;
   text-transform: uppercase;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -420,6 +420,12 @@ main .todo-list #todo-list .todo-item .actions button.edit {
 
 main .todo-list #todo-list .todo-item .actions button.delete {
   color: crimson;
+}
+
+main .todo-list #todo-list .todo-item.done {
+  -webkit-box-shadow: 0 1px 2px #1f2937;
+          box-shadow: 0 1px 2px #1f2937;
+  background-color: #1f2937;
 }
 
 main .todo-list #todo-list .todo-item.done .todo-content input {

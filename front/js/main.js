@@ -119,15 +119,9 @@ function DisplayTodos() {
         localStorage.setItem('todos', JSON.stringify(todos));
           DisplayTodos();
       }
-
     })
-
   })
 }
-
-
-
-
 
 
 
